@@ -125,7 +125,3 @@ zephyr_udc0: &usbd {
         };
     };
 };
-
-&mt {
-    flavor = "balanced";
-};
