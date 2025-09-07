@@ -10,8 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
+#define RAISE   1
+#define LOWER   2
+
 
 / {
     chosen {
@@ -78,7 +79,7 @@
     &kp LBKT    &kp N7         &kp N8          &kp N9      &kp LS(RBKT)  &kp RCTRL
 
     // Row 2
-    &kp LS(N6)  &kp LS(N1)     &kp LS(LBKT)    &kp LS(N9)  &kp LS(N0)   &kp LS(N3)
+    &kp LS(N6)  &mt LGUI LS(N1) &mt LCTRL LS(LBKT)  &mt LALT LS(N9)  &mt LSHIFT LS(N0)   &kp LS(N3)
     &kp LS(N8)  &mt RGUI N4    &mt RCTRL N5    &mt RALT N6  &mt RSHIFT APOS  &kp RALT
 
     // Row 3
