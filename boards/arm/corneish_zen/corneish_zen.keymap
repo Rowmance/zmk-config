@@ -13,8 +13,10 @@
 #define RAISE   1
 #define LOWER   2
 
+// https://zmk.dev/docs/keymaps/behaviors/hold-tap#mod-tap
 &mt {
     flavor = "balanced";
+    require-prior-idle-ms = <125>;
 };
 
 / {
