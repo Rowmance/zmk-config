@@ -16,7 +16,8 @@
 // https://zmk.dev/docs/keymaps/behaviors/hold-tap#mod-tap
 &mt {
     flavor = "balanced";
-    require-prior-idle-ms = <125>;
+    require-prior-idle-ms = <125>; // disable if typing for 125ms before
+    quick-tap-ms = <150>; // tap again within 150 to hold the tapped key
 };
 
 / {
